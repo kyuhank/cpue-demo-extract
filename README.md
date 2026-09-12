@@ -1,7 +1,10 @@
 # Data extraction
 
-Versioned SQL turns the synthetic database snapshot into checked set records and catches.
+Select and check records from a versioned database snapshot using SQL.
 
-Part of the [CPUE workflow demonstration](https://github.com/kyuhank/cpue-actions-demo). The central runner retrieves a locked commit, supplies shared model utilities and records inputs, outputs and provenance. All example data are synthetic.
+- **Inputs:** Database snapshot and extraction queries.
+- **Outputs:** Set records (`sets.csv`), annual catches (`catch.csv`) and a record of the source release.
 
-[HTML job outputs](https://kyuhank.github.io/cpue-demo-extract/). Results are selected by run ID and served from the recorded execution artifacts.
+Part of the [CPUE workflow demo](https://github.com/kyuhank/cpue-actions-demo), using synthetic data and toy models. Each run records the exact code commit and input/output hashes.
+
+[Run the demo](https://kyuhank.github.io/cpue-actions-demo/) · [View job outputs](https://kyuhank.github.io/cpue-demo-extract/)
